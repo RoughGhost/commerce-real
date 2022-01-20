@@ -1,0 +1,103 @@
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  position: relative;
+  overflow: hidden;
+  padding: 0 0;
+  background-color: #ddcccc;
+}
+
+.hero-container:nth-child(2) {
+  background-color: #bcb2bd;
+}
+.hero-container:nth-child(3) {
+  background-color: #ddcb88;
+}
+
+.hero-arrow1 {
+  width: 50px;
+  height: 50px;
+  background-color: #fff7f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* left: ${(props) => props.direction === "left" && "10px"};
+  right: ${(props) => props.direction === "right" && "10px"}; */
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 2;
+}
+.hero-arrow2 {
+  width: 50px;
+  height: 50px;
+  background-color: #fff7f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* left: ${(props) => props.direction === "left" && "10px"};
+  right: ${(props) => props.direction === "right" && "10px"}; */
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 2;
+  right: 0;
+}
+
+.hero-content {
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease;
+}
+
+.hero-content_section {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+
+.hero-content-image {
+  height: 100%;
+  flex: 1;
+  background-size: cover;
+}
+
+.image-1 {
+  height: 80%;
+}
+
+.hero-info {
+  margin-right: 80px;
+}
+
+.hero-info h4 {
+  padding: 15px;
+}
+.hero-info h1 {
+  color: #088178;
+}
+
+.hero-info p {
+  font-weight: 500;
+}
+
+.hero-info button {
+  color: #088178;
+  background-color: tan;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
