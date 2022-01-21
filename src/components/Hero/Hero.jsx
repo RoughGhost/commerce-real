@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <div className="hero-container">
-      <div className="hero-arrow1" onClick={() => handleArrow("r")}>
+      <div className="hero-arrow1" onClick={() => handleArrow("l")}>
         <ArrowLeftOutlined />
       </div>
       <div
