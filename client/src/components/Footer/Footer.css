@@ -1,0 +1,63 @@
+.col {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* img {
+  width: 120px;
+  height: 55px;
+} */
+
+.follow {
+  margin-top: 20px;
+}
+
+.i {
+  padding-right: 4px;
+  cursor: pointer;
+  color: #465b52;
+}
+
+/* .row {
+  border: 1px solid #088178;
+  border-radius: 6px;
+} */
+
+.install img {
+  margin: 10px 0 15px 0;
+  width: 75px;
+  height: 50px;
+}
+
+.follow .i:hover,
+a:hover {
+  color: #088178;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+}
