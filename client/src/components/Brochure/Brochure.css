@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("../../Images/mike-von-3qP0qqWRRaQ-unsplash.jpg");
+  background-image: url("../../Images/sj-Y-SmXnqF6AE-unsplash.jpg");
   min-width: 580px;
   height: 50vh;
   background-size: cover;
@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("../../Images/mike-von-3qP0qqWRRaQ-unsplash.jpg");
+  background-image: url("../../Images/sj-Y-SmXnqF6AE-unsplash.jpg");
   min-width: 580px;
   height: 50vh;
   background-size: cover;
@@ -42,7 +42,7 @@
 }
 
 .sm-banner .banner-box2 {
-  background-image: url("../../Images/piotr-szulawski-XjR-Y8PKeww-unsplash.jpg");
+  background-image: url("../../Images/artiom-vallat-CHKaD8uRaDU-unsplash.jpg");
 }
 
 .sm-banner h4 {

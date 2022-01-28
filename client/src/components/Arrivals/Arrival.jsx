@@ -1,5 +1,5 @@
 import React from "react";
-import { productitems } from "../../data";
+import { newarrival } from "../../data";
 import { ShoppingCartOutlined, StarOutlined } from "@material-ui/icons";
 import { Badge } from "@material-ui/core";
 import "./Arrival.css";
@@ -10,8 +10,8 @@ const Arrival = () => {
       <h2>New Arrivals </h2>
       <p>Hit Summer Collection Design</p>
       <div className="pro-container">
-        {productitems.map((item) => (
-          <div className="pro">
+        {newarrival.map((item) => (
+          <div className="arrival">
             <img src={item.image} alt="product images" />
             <div className="des">
               <span>{item.desc}</span>

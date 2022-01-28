@@ -10,7 +10,7 @@
   height: 65%;
 }
 
-.product1 .pro {
+.product1 .arrival {
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
@@ -28,25 +28,25 @@
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
-.pro img {
+.arrival img {
   width: 100%;
   border-radius: 20px;
-  background-color: #96ac82;
+  background-color: #7cd3b9;
   height: 60%;
   object-fit: contain;
 }
 
-.pro .des {
+.arrival .des {
   text-align: start;
   padding: 10px 0;
 }
 
-.pro .des span {
+.arrival .des span {
   color: #606063;
   font-size: 12px;
 }
 
-.pro .des h5 {
+.arrival .des h5 {
   padding-top: 7px;
   color: #1a1a1a;
   font-size: 14px;
@@ -57,14 +57,14 @@
   font-size: 12px;
 }
 
-.pro .des h4 {
+.arrival .des h4 {
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
   color: #088178;
 }
 
-.pro .cart {
+.arrival .cart {
   width: 40px;
   height: 40px;
   line-height: 40px;

@@ -7,14 +7,14 @@ const Brochure = () => {
       <div className="banner-box">
         <h4>Crazy Deals</h4>
         <h2>BUY 2 GET ONE FREE </h2>
-        <span>The Best Suit in Town these days</span>
-        <button className="white">Learn More</button>
+        <span>The Best Watch in Town these days</span>
+        <button className="white">Shop Now</button>
       </div>
       <div className="banner-box banner-box2">
         <h4>Summer & Spring</h4>
         <h2>Upcoming Season</h2>
-        <span>The Best Suit in Town these days</span>
-        <button className="white">Collection</button>
+        <span>The Best Kicks in Town these days</span>
+        <button className="white">Shop Now</button>
       </div>
     </div>
   );

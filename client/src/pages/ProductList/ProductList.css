@@ -1,0 +1,19 @@
+.productlist-filter_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-filter {
+  margin: 20px;
+}
+
+.productlist-span {
+  font-size: 20px;
+  font-weight: 600px;
+  margin-right: 20px;
+}
+
+.productlist-select {
+  padding: 10px;
+  margin-right: 20px;
+}
