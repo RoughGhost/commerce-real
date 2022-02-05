@@ -5,11 +5,13 @@
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("../../Images/pexels-edgars-kisuro-1488463.jpg") center;
+    url("../../Images/three-young-beautiful-smiling-girls-trendy-summer-casual-jeansjpg.jpg")
+      center;
   display: flex;
   align-items: center;
   justify-content: center;
-  object-fit: contain;
+  background-size: cover;
+  /* object-fit: contain; */
 }
 
 .register-wrapper {

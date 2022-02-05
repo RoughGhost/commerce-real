@@ -113,21 +113,25 @@ export const productitems = [
   },
 ];
 
-export const categories = [
+export const brochure = [
   {
     id: 1,
+
+    title: "Crazy Deals",
+    desc: "BUY 2 GET ONE FREE",
+    desco: "The Best Watch in Town these days",
     image: Cate1,
-    title: "Classic Watch",
+    button: "Shop Now",
+    cat: "watch",
   },
   {
     id: 2,
+    title: "Summer & Spring",
+    desc: "Upcoming Season",
+    desco: "The Best Kicks in Town these days",
     image: Cate2,
-    title: "Classic Watch",
-  },
-  {
-    id: 3,
-    image: Cate3,
-    title: "Classic Watch",
+    button: "Show Now",
+    cat: "sneakers",
   },
 ];
 

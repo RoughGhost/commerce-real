@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Products from "../components/Products/Products";
 import Banner from "../components/Banner/Banner";
 import Arrival from "../components/Arrivals/Arrival";
-import Brochure from "../components/Brochure/Brochure";
+import Brochures from "../components/Brochures/Brochures";
 import Showcase from "../components/Showcase/Showcase";
 import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/Footer/Footer";
@@ -20,7 +20,7 @@ const Home = () => {
       <Products />
       <Banner />
       <Arrival />
-      <Brochure />
+      <Brochures />
       <Showcase />
       <Newsletter />
       <Footer />

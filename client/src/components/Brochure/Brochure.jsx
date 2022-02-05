@@ -1,20 +1,17 @@
 import React from "react";
+import { Link, useParams } from "react-router-dom";
 import "./Brochure.css";
 
-const Brochure = () => {
+const Brochure = ({ item }) => {
   return (
-    <div className="sm-banner section-p1">
-      <div className="banner-box">
-        <h4>Crazy Deals</h4>
-        <h2>BUY 2 GET ONE FREE </h2>
-        <span>The Best Watch in Town these days</span>
-        <button className="white">Shop Now</button>
-      </div>
-      <div className="banner-box banner-box2">
-        <h4>Summer & Spring</h4>
-        <h2>Upcoming Season</h2>
-        <span>The Best Kicks in Town these days</span>
-        <button className="white">Shop Now</button>
+    <div className="sm-brochure">
+      <img src={item.image} alt="" className="brochure-image" />
+      <div className="brochure-info">
+        <h1 className="brochure-title">{item.title}</h1>
+        <span className="brochure-desco">{item.desco}</span>
+        <Link to={`/products/${item.cat}`}>
+          <button className="white">Shop Now</button>
+        </Link>
       </div>
     </div>
   );
