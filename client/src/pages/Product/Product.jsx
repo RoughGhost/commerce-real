@@ -52,7 +52,7 @@ const Product = () => {
           <div className="product-add_container">
             <div className="product-amount_container">
               <Remove />
-              <span className="product-amount">Amount</span>
+              <span className="product-amount">1</span>
               <Add />
             </div>
             <button className="product-amount_button">ADD TO CART</button>

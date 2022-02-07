@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Product.css";
 import { productitems } from "../../data";
-import { ShoppingCartOutlined, StarOutlined } from "@material-ui/icons";
-import { Badge } from "@material-ui/core";
+import {
+  FavoriteBorderOutlined,
+  SearchOutlined,
+  ShoppingCartOutlined,
+  StarOutlined,
+} from "@material-ui/icons";
+import axios from "axios";
 
-const Products = () => {
+const Products = ({ cat, filter, sort }) => {
+  const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+
+   useEffect(() => {
+    const getProducts = async ()=> {
+      try{
+       const res = await axios.get("https://localhost:5000/api/products");
+       console.log(res)
+      }catch(err){
+        
+      }
+    }
+    getProducts()
+   }, [cat])
+
   return (
     <div className="product1 section-p1">
       <h2>Featured Products</h2>
@@ -25,9 +45,17 @@ const Products = () => {
               </div>
               <h4>{item.price}</h4>
             </div>
-            <Badge className="badge">
-              <ShoppingCartOutlined className="cart" />
-            </Badge>
+            <div className="badge">
+              <div className="icon-dim">
+                <ShoppingCartOutlined className="cart" />
+              </div>
+              <div className="icon-dim">
+                <SearchOutlined className="cart" />
+              </div>
+              <div className="icon-dim">
+                <FavoriteBorderOutlined className="cart" />
+              </div>
+            </div>
           </div>
         ))}
       </div>

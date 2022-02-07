@@ -3,9 +3,7 @@ import "./Brochures.css";
 import { brochure } from "../../data";
 import Brochure from "../Brochure/Brochure";
 
-
 const Brochures = () => {
-
   return (
     <div className="brochures-container">
       {brochure.map((item) => (

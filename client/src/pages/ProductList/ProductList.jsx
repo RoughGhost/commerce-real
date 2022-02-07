@@ -10,6 +10,15 @@ const ProductList = () => {
   const location = useLocation();
   const cat = location.pathname.split("/")[2];
   const [filter, setFilter] = useState({});
+  const [sort, setSort] = useState("newest");
+  const handleFilters = (e) => {
+    const value = e.target.value;
+    setFilter({
+      ...filter,
+      [e.target.name]: value,
+    });
+  };
+
   return (
     <div className="productlist-container">
       <Navbar />
@@ -17,15 +26,23 @@ const ProductList = () => {
       <div className="productlist-filter_container">
         <div className="productlist-filter">
           <span className="productlist-span">Filter Products:</span>
-          <select className="productlist-select">
-            <option disabled>Color</option>
+          <select
+            className="productlist-select"
+            onChange={handleFilters}
+            name="color"
+          >
+            <option>Color</option>
             <option>White</option>
             <option>Red</option>
             <option>Blue</option>
             <option>Green</option>
           </select>
-          <select className="productlist-select">
-            <option disabled>Size</option>
+          <select
+            className="productlist-select"
+            onChange={handleFilters}
+            name="size"
+          >
+            <option>Size</option>
             <option>XS</option>
             <option>X</option>
             <option>M</option>
@@ -35,14 +52,17 @@ const ProductList = () => {
         </div>
         <div className="productlist-filter">
           <span className="productlist-span">Filter Products:</span>
-          <select className="productlist-select">
-            <option selected>Newest</option>
-            <option>Price (asc)</option>
-            <option>Price (desc)</option>
+          <select
+            className="productlist-select"
+            onChange={(e) => setSort(e.target.value)}
+          >
+            <option value="newest">Newest</option>
+            <option value="asc">Price (asc)</option>
+            <option value="desc">Price (desc)</option>
           </select>
         </div>
       </div>
-      <Products />
+      <Products cat={cat} filter={filter} sort={sort} />
       <Newsletter />
       <Footer />
     </div>
